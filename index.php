@@ -26,7 +26,7 @@
 
 <body>
    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">ShopShop</a>
+    <a href="#" class="navbar-brand">Kannada</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,6 +48,17 @@
         </div>
     </div>
 </nav>
+  
+  
+  <!--flag-->
+  
+  <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    
+  </div>
+</div>
+  
+  <!--flag end-->
   
 </body>
 </html>
