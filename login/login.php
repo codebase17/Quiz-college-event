@@ -40,7 +40,7 @@
   <!--flag end-->
 
 
-<div class="jumbotron">
+<div class="jumbotron p-4">
      <div class="text-center">
         <p class="display-4">Login</p>       
      </div>
