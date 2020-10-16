@@ -70,7 +70,11 @@
   
     
     <!--start-->
-        <button type="button" class="btn btn-dark">Start Quiz</button>
+    <div class="m-5">
+        <div class="text-center m-5">
+            <button type="button" class="btn btn-dark">Start Quiz</button>
+        </div>
+    </div>
     <!--start end-->    
 </body>
 </html>
