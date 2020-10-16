@@ -52,12 +52,12 @@
   
   <!--flag-->
   
-  <div class="card text-white bg-warning mb-3" style="max-width: 100%;">
+  <div class="card text-white bg-warning rounded-0" style="max-width: 100%;">
   <div class="card-body">
     
   </div>
 </div>
-  <div class="card text-white bg-danger mb-3" style="max-width: 100%;">
+  <div class="card text-white bg-danger rounded-0" style="max-width: 100%;">
   <div class="card-body">
     
   </div>
