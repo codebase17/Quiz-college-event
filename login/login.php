@@ -62,6 +62,5 @@
     <button type="submit" name="login_user" class="btn btn-dark">Sign in</button>
 </form>
 
-<?php 
-  include '../footer.php';
-?>
+</body>
+</html>
