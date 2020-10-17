@@ -59,7 +59,7 @@
             else if($emailexists)
                 echo "<h5>Email is already registered</h5>";
             else if($error)
-                echo "<h5>Something happened. try again</h5>";
+                echo "<h5>Something went wrong. try again</h5>";
            ?>
         </div>
      </div>
