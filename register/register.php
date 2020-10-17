@@ -56,7 +56,7 @@
         <label for="inputPassword">Password</label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
     </div>
-    <button type="submit" name="login_user" class="btn btn-dark">Sign up</button>
+    <button type="submit" name="register_user" class="btn btn-dark">Sign up</button>
 </form>
 
 </body>
