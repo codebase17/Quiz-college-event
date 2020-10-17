@@ -43,7 +43,14 @@
   ?> 
 
 
-<div class="container">
+<div class="jumbotron p-4">
+     <div class="text-center">
+        <p class="display-4">Register</p>       
+     </div>
+  </div>
+
+
+<div class="container mt-2 mb-2">
        <div class="text-center">
            <?php
             if($userexists)
@@ -55,13 +62,6 @@
            ?>
         </div>
      </div>
-
-<div class="jumbotron p-4">
-     <div class="text-center">
-        <p class="display-4">Register</p>       
-     </div>
-  </div>
-
 
 
 <form class="jumbotron m-4" method="POST" action="register_details.php">
