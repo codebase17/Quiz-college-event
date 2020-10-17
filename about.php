@@ -16,7 +16,7 @@
         <div class="navbar-nav">
             <a href="index.php" class="nav-item nav-link">Home</a>
 	          <a href="pages/leaderboard.php" class="nav-item nav-link">Leaderboard</a>	
-            <a href="about.php" class="nav-item nav-link active">About</a>
+            <a href="#" class="nav-item nav-link active">About</a>
         </div>
         <div class="navbar-nav ml-auto">
             <!--<a href="register/register.php" class="nav-item nav-link">Register</a>
