@@ -8,7 +8,7 @@
     $question=$POST['question'];
     $answer=$POST['answer'];
   
-   if (isset($_SESSION['user_name']=="groot")) {
+   if ($_SESSION['user_name']=="groot") {
     if (isset($_POST['add_question'])) {
     
       if(($con->query("insert into quiz(ques_no,question,answer) values('".mysqli_real_escape_string($con,$ques_no)."','".mysqli_real_escape_string($con,$question)."','".mysqli_real_escape_string($con,$answer)."')"))===True){
