@@ -35,6 +35,27 @@
   <!--flag end-->
 
 
+ <?php
+        $userexists=$_GET['userexists'];
+        $emailexists=$_GET['emailexists'];
+        $error=$_GET['error'];
+   
+  ?> 
+
+
+<div class="container">
+       <div class="text-center">
+           <?php
+            if($userexists)
+                echo "<h5>User already exists</h5>";
+            else if($emailexists)
+                echo "<h5>Email is already registered</h5>";
+            else if($error)
+                echo "<h5>Something happened. try again</h5>";
+           ?>
+        </div>
+     </div>
+
 <div class="jumbotron p-4">
      <div class="text-center">
         <p class="display-4">Register</p>       
