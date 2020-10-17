@@ -59,7 +59,7 @@
     <!--start-->
     <div id="start" class="m-5">
         <div class="text-center m-5">
-            <button type="button" class="btn btn-dark">Start Quiz</button>
+            <a href="pages/quiz.php"><button type="button" class="btn btn-dark">Start Quiz</button></a>
         </div>
     </div>
     <!--start end-->    
