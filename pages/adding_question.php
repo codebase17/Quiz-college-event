@@ -4,7 +4,7 @@
     include '../header.php';
     $con=getCon();
     
-    $ques_no=$_GET['ques_no'];
+    $ques_no=$_POST['ques_no'];
     $question=$_POST['question'];
     $answer=$_POST['answer'];
   
