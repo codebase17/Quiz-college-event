@@ -46,7 +46,32 @@
   
   <!--flag end-->
   
-  
+ <div class="jumbotron">
+        <div class="text-center">
+            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+                            
+			echo'
+			<div id="start" class="m-4">
+        			<div class="text-center m-4">
+            			<a href="pages/add_question.php" class="m-2"><button type="button" class="btn btn-dark">Add question</button></a>
+       				 </div>
+   			 </div>
+			';
+	
+                    }
+                    else if(isset($_SESSION['user_name'])){ 
+                        echo '<h1 class="display-4"> username : '.$_SESSION['user_name'].'</h1>';
+                    }
+                    else
+                    {
+                        header("Location:index.php");
+                        die();
+                    }
+            ?>
+        </div>
+    </div> 
+	
+	
   
 </body>
 </html>
