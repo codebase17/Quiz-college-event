@@ -2,7 +2,7 @@
 
     session_start();
     include '../header.php';
-    
+    $con=getCon();
     
     $ques_no=$_POST['ques_no'];
     $question=$POST['question'];
