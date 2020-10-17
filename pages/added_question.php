@@ -61,12 +61,12 @@ else{
      
      $question_no=array();
      $question=array();
-     $answers=array();
+     $answer=array();
      
      while($ele = $res->fetch_assoc()){
 	     $question_no[]=$ele['ques_no'];
 	      $question[]=$ele['question'];
-     		$answers[]=$ele['answer'];
+     		$answer[]=$ele['answer'];
 	     
      }
      
