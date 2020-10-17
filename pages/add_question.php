@@ -4,8 +4,11 @@
     include '../header.php';
 
 
-	if($_SESSION['user_name']!="groot")
+	if($_SESSION['user_name']!="groot"){
 		echo "<h1>FUCK OFF BITCH<h/1>";
+		
+	}
+	else{
 ?>
 
 <body>
@@ -76,3 +79,5 @@
   
 </body>
 </html>
+
+}?>
