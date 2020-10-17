@@ -5,8 +5,8 @@
     $con=getCon();
     
     $ques_no=$_POST['ques_no'];
-    $question=$POST['question'];
-    $answer=$POST['answer'];
+    $question=$_POST['question'];
+    $answer=$_POST['answer'];
   
 
     echo $ques_no."<br>";
