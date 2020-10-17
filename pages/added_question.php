@@ -54,6 +54,48 @@ else{
         </div>
      </div>
   
+<?php
+	
+    $con=getCon();
+    $res=$con->query("select * from quiz"); 
+     
+     $question_no=array();
+     $question=array();
+     $answers=array();
+     
+     while($ele = $res->fetch_assoc()){
+	     $question_no[]=$ele['ques_no'];
+	      $question=$ele['question'];
+     		$answers=$ele['answer'];
+	     
+     }
+     
+     $c=count($question_no);
+     
+	?>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">question no</th>
+      <th scope="col">question</th>
+      <th scope="col">answer</th>
+    </tr>
+  </thead>
+  <tbody>
+	  <? for($i=0;$i<$c;$i++){ ?>
+    <tr>
+      <td><?=$question_no[$i]?></td>
+      <td><?=$question[$i]?></td>
+      <td><?=$answer[$i]?></td>
+    </tr>
+	  <? } ?>
+  </tbody>
+</table>	
+	
+	
+	
+	
   </body>
   </html>
 
