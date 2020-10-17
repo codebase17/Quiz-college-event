@@ -49,7 +49,7 @@
     
     <div class="text-center">
         <div style="background-color:black;color:white; height:4rem;">
-            <p id="demo"></p>
+            <p id="demo" class="p-3 m-5"></p>
         </div>
     </div>
     <!--timerend-->
