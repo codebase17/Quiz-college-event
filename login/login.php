@@ -42,6 +42,17 @@
   </div>
 
 
+<div class="container mt-2 mb-2">
+       <div class="text-center">
+           <?php
+            if($wrongpassword)
+                echo "<h5>You have entered wrong password</h5>";?>
+        </div>
+     </div>
+    
+
+
+
 
 <form class="jumbotron m-4" method="POST" action="login_details.php">
      <div class="form-group">
