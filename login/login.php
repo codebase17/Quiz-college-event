@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-            <a href="../index.php" class="nav-item nav-link active">Home</a>
+            <a href="../index.php" class="nav-item nav-link">Home</a>
             <a href="../about.php" class="nav-item nav-link">About</a>
         </div>
         <div class="navbar-nav ml-auto">
@@ -18,7 +18,7 @@
                 }
                 else{
                     echo '<a href="../register/register.php" class="nav-item nav-link">Register</a>
-                            <a href="#" class="nav-item nav-link">Login</a>';
+                            <a href="#" class="nav-item nav-link active">Login</a>';
                 }
             ?>
       </div>
