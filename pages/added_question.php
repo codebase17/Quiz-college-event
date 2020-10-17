@@ -83,13 +83,11 @@ else{
     </tr>
   </thead>
   <tbody>
-	  <? for($i=0;$i<$c;$i++){ ?>
     <tr>
-      <td><?=$question_no[$i]?></td>
-      <td><?=$question[$i]?></td>
-      <td><?=$answer[$i]?></td>
+      <td><?=$question_no?></td>
+      <td><?=$question?></td>
+      <td><?=$answer?></td>
     </tr>
-	  <? } ?>
   </tbody>
 </table>	
 	
