@@ -3,6 +3,9 @@
     session_start();
     include '../header.php';
 
+
+	if(isset($_SESSION['user_name']!="groot"))
+		echo "<h1>FUCK OFF BITCH<h/1>";
 ?>
 
 <body>
