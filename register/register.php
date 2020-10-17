@@ -10,6 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
             <a href="../index.php" class="nav-item nav-link">Home</a>
+            <a href="../pages/leaderboard.php" class="nav-item nav-link">Leaderboard</a>	
             <a href="../about.php" class="nav-item nav-link">About</a>
         </div>
         <div class="navbar-nav ml-auto">
