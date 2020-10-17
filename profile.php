@@ -48,7 +48,7 @@
   
  <div class="jumbotron">
         <div class="text-center">
-            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="groot"){
                             
 			echo'
 			<div id="start" class="m-4">
