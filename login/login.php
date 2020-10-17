@@ -31,6 +31,7 @@
   
   <?php
   include '../flag.php';
+  $wrongpassword=$_GET['wrongpassword'];
 ?>
   
   <!--flag end-->
