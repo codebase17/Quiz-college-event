@@ -45,6 +45,16 @@
   <!--flag end-->
   
     
+    <!--timer-->
+    
+    <div class="text-center m-4 p-2">
+        <p id="demo"></p>
+    </div>
+ 
+    <!--timerend-->
+    
+    
+    
     <!--start-->
     <div class="m-5">
         <div class="text-center m-5">
@@ -54,7 +64,7 @@
     <!--start end-->    
 </body>
 
-<p id="demo"></p>
+
 
 <script>
 // Set the date we're counting down to
@@ -76,8 +86,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "Days " + hours + "HOURS "
+  + minutes + "Minutes " + seconds + "Seconds ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
