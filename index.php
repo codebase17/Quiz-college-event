@@ -34,15 +34,12 @@
   
   
   <!--flag-->
-  
-  <div class="card text-white bg-warning rounded-0" style="max-width: 100%;">
-  <div class="card-body">
-  </div>
-</div>
-  <div class="card text-white bg-danger rounded-0" style="max-width: 100%;">
-  <div class="card-body">
-  </div>
-</div>
+ 
+  <?php
+    
+    include 'flag.php';
+    
+   ?>
   
   <!--flag end-->
   
