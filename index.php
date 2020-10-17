@@ -46,23 +46,18 @@
   
     
     <!--timer-->
-    <div class="text-center">
-    <div class="card text-white bg-dark" style="max-width:25%">
-  <div class="card-body">
-    <div class="text-center m-4 p-2">
-        <p id="demo"></p>
-    </div>
-  </div>
-</div>
-    </div>
     
- 
+    <div class="text-center">
+        <div style="background-color:black;color:white; height:4rem; max-width:25%;">
+            <p id="demo"></p>
+        </div>
+    </div>
     <!--timerend-->
     
     
     
     <!--start-->
-    <div class="m-5">
+    <div id="start" class="m-5">
         <div class="text-center m-5">
             <button type="button" class="btn btn-dark">Start Quiz</button>
         </div>
@@ -92,13 +87,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  //document.getElementById("demo").innerHTML = days + " D : " + hours + " H : "+ minutes + " M : " + seconds + " S";
-    document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = days + " D : " + hours + " H : "+ minutes + " M : " + seconds + " S";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Get Started";
+    document.getElementById("start");;
   }
 }, 1000);
 </script>
