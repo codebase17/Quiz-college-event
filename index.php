@@ -46,14 +46,15 @@
   
     
     <!--timer-->
-    
-    <div class="card text-white bg-dark">
+    <div class="text-center">
+    <div class="card text-white bg-dark" style="max-width:25%">
   <div class="card-body">
     <div class="text-center m-4 p-2">
         <p id="demo"></p>
     </div>
   </div>
 </div>
+    </div>
     
  
     <!--timerend-->
@@ -92,7 +93,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + " D : " + hours + " H : "
-  + minutes + " M : " + seconds + " S : ";
+  + minutes + " M : " + seconds + " S";
 
   // If the count down is finished, write some text
   if (distance < 0) {
