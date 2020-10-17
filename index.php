@@ -47,7 +47,7 @@
     
     <!--timer-->
     
-    <div class="text-center">
+    <div class="timer text-center">
         <div style="background-color:black;color:white; height:4rem;">
             <p id="demo" class="p-3 m-5"></p>
         </div>
@@ -65,6 +65,17 @@
     <!--start end-->    
 </body>
 
+
+<style>
+    /*Media Queries*/
+	@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+	@media (min-width:481px)  {  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+    @media (min-width:641px)  {  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+	@media (min-width:961px)  { .timer{margin-left:35rem;margin-right:35rem;} /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+	@media (min-width:1025px) { .timer{margin-left:35rem;margin-right:35rem;} /* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { .timer{margin-left:35rem;margin-right:35rem;} /* hi-res laptops and desktops */ }
+	
+</style>
 
 
 <script>
