@@ -46,7 +46,9 @@
   
   <!--flag end-->
   
-  
+  <div class="jumbotron text-center" >
+   <p class="display-5" >Kannada Rajyotsava</p>
+  </div>
   
 </body>
 </html>
