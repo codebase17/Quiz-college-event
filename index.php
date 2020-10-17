@@ -88,11 +88,12 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + " D : " + hours + " H : "+ minutes + " M : " + seconds + " S";
-
+    document.getElementById("start").style.display="none";
+        
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("start");;
+    document.getElementById("start").style.display="block";
   }
 }, 1000);
 </script>
