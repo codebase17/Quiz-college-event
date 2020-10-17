@@ -1,10 +1,10 @@
 <?php?>
 
-<div class="flag" style="bvackground-color:yellow">
+<div class="flag" style="background-color:yellow; height:2rem;">
   
 </div>
 
 
-<div class="flag" style="bvackground-color:red">
+<div class="flag" style="background-color:red; height:2rem;">
   
 </div>
