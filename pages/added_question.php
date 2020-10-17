@@ -48,7 +48,7 @@ else{
            <?php
             if($added=="yes")
                 echo "<h5>Question Added Successfully</h5>";
-            else
+            else if($added=="no")
                 echo "<h5>Question Not added</h5>";
            ?>
         </div>
@@ -65,8 +65,8 @@ else{
      
      while($ele = $res->fetch_assoc()){
 	     $question_no[]=$ele['ques_no'];
-	      $question=$ele['question'];
-     		$answers=$ele['answer'];
+	      $question[]=$ele['question'];
+     		$answers[]=$ele['answer'];
 	     
      }
      
@@ -84,9 +84,11 @@ else{
   </thead>
   <tbody>
     <tr>
-      <td><?=$question_no?></td>
-      <td><?=$question?></td>
-      <td><?=$answer?></td>
+	    <? for($i=0;$i<$c;$i++) { ?>
+      <td><?=$question_no[$i]?></td>
+      <td><?=$question[$i]?></td>
+      <td><?=$answer[$i]?></td>
+	    <? } ?>
     </tr>
   </tbody>
 </table>	
