@@ -61,7 +61,7 @@
  <form class="jumbotron m-4" method="POST" action="adding_question.php">
      <div class="form-group">
         <label for="inputqno">question number</label>
-        <input type="text" class="form-control" id="inputqno" placeholder="qno" value=".<?=$c+1?>." name="ques_no" disabled required>
+        <input type="text" class="form-control" id="inputqno" placeholder="qno" value="<?=$c+1?>" name="qno" disabled required>
     </div>
     <div class="form-group">
         <label for="inputquestion">Question</label>
@@ -71,6 +71,7 @@
         <label for="inputanswer">Answer</label>
         <input type="text" class="form-control" id="inputanswer" placeholder="answer" name="answer" required>
     </div>
+    <input type="hidden" name="ques_no" value="<?php echo $c+1; ?>">  
     <button type="submit" name="add_question" class="btn btn-dark">Add question</button>
 </form>
   
