@@ -54,6 +54,7 @@
 			<div id="start" class="m-4">
         			<div class="text-center m-4">
             			<a href="pages/add_question.php" class="m-2"><button type="button" class="btn btn-dark">Add question</button></a>
+				<a href="pages/added_question.php" class="m-2"><button type="button" class="btn btn-dark">View questions</button></a>
        				 </div>
    			 </div>
 			';
