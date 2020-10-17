@@ -29,6 +29,12 @@
           header("Location:../login/login.php");
           die();
       }
+      else
+      {
+         $error=true;
+          header("Location:register.php?error=".$error);
+          die();
+      }
     }
   }
 ?>
