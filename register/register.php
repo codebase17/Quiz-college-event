@@ -17,7 +17,7 @@
   
                 }
                 else{
-                    echo '<a href="#" class="nav-item nav-link">Register</a>
+                    echo '<a href="#" class="nav-item nav-link active">Register</a>
                             <a href="../login/login.php" class="nav-item nav-link">Login</a>';
                 }
             ?>
