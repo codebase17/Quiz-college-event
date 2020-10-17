@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    include 'header.php';
+    include '../header.php';
 
 ?>
 
@@ -40,7 +40,7 @@
  
   <?php
     
-    include 'flag.php';
+    include '../flag.php';
     
    ?>
   
