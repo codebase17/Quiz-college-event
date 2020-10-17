@@ -48,7 +48,7 @@
     <!--timer-->
     
     <div class="text-center">
-        <div style="background-color:black;color:white; height:4rem; max-width:25%;">
+        <div style="background-color:black;color:white; height:4rem; margin-left:35rem;margin-right:35rem">
             <p id="demo"></p>
         </div>
     </div>
