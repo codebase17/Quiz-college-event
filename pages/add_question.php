@@ -55,7 +55,7 @@
  <form class="jumbotron m-4" method="POST" action="adding_question.php">
      <div class="form-group">
         <label for="inputqno">question number</label>
-        <input type="text" class="form-control" id="inputqno" placeholder="qno" name="ques_no" required>
+        <input type="text" class="form-control" id="inputqno" placeholder="qno" name="ques_no" disabled required>
     </div>
     <div class="form-group">
         <label for="inputquestion">Question</label>
