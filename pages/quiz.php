@@ -1,8 +1,8 @@
 <?php
-    include '../header.php';
+    include_once '../header.php';
     include_once 'get_question.php';
-    $user=$_SESSION['user_name'];
-    $picnum=$_GET['picnum'];    
+    session_start();
+    $user=$_SESSION['user_name'];  
 
 ?>
 
@@ -56,8 +56,9 @@
 		getQuestion();	
 		
 		$question=$_SESSION['question'];
+		$ques_no=$_SESSION['ques_no'];
 		
-		echo $question."<br>";
+		echo $question."<br>".$ques_no;
 
   
 	echo '<div class="text-center m-4">
