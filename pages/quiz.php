@@ -63,7 +63,7 @@
 	echo '<div class="text-center m-4">
 		<div class="row">
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
-				<img src="../assets/<?=$ques_no>.jpg" class="d-block img-fluid views" onerror="this.src='../assets/testimage.jpg';" alt="image">
+				<img src="../assets/<?=$ques_no>.jpg" class="d-block img-fluid views" alt="image">
 			</div>
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<p class="m-4">'.$question.'</p>
