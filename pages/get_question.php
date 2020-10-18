@@ -4,7 +4,6 @@
 	session_start();
   	$c=$_SESSION['count'];
 	$user=$_SESSION['user_name'];
-	global $con;
 
 	function getQuestionNumbers()
 	{
