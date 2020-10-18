@@ -2,7 +2,6 @@
 
     session_start();
     include 'header.php';
-    include 'pages/get_question.php';
 
 ?>
 
