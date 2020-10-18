@@ -84,11 +84,9 @@
 				else if($ans=="wrong")
 				{
 					echo '<h3><span class="badge badge-secondary">Wrong</span></h3>';
-					//echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>'
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				else{
-					//echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>';
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				
