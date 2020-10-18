@@ -2,7 +2,6 @@
 
 	session_start();
   	$c=$_SESSION['count'];
-	$question=array();
 	$user=$_SESSION['user_name'];
 	$con = getCon();
 
