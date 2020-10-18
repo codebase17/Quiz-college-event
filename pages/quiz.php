@@ -57,10 +57,9 @@
 	
 	if($user)
 	{
-	
-?>
+
   
-	<div class="text-center m-4">
+	echo '<div class="text-center m-4">
 		<div class="row">
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
@@ -71,13 +70,8 @@
 				<button type="button" class="btn btn-primary m-4">SUBMIT</button>
 			</div>
 		</div>
-	</div>
-  
-  
-  
-  
-  
-  <? }
+	</div>';
+  	 }
 	
 	else
 	{
