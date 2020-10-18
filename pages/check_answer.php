@@ -11,10 +11,6 @@
   $ques_no=$_SESSION['ques_no'];
   $answer=$_POST['answer'];
 
-	/*var_dump($ques_no);
-	echo "<br>";
-	var_dump($answer);*/
-
   $correct=$con->query("select answer from quiz where ques_no='$ques_no'")->fetch_assoc()['answer'];
   if($answer==$correct)
   {
@@ -23,16 +19,11 @@
       $con->query("update matches set status='1',end_time='$cur' where user_name='$user' and quiz_no='$ques_no'");
       
       $prev = $con->query("select start_time from matches where user_name='$user' and quiz_no='$num'")->fetch_assoc()['start_time'];
-      
-	  echo "before string to time<br>";
-	  var_dump($prev);
-		echo "  ";
-	  var_dump($cur);
 	  
       $prev=strtotime($prev);
       $cur =strtotime($cur);
 	  
-	  echo "<br>before string to time<br>";
+	  echo "<br>after string to time<br>";
 	  var_dump($prev);
 		echo "  ";
 	  var_dump($cur);
