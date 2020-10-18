@@ -2,7 +2,7 @@
 
     session_start();
     include '../header.php';
-
+    include 'get_question.php';
 ?>
 
 <body>
@@ -48,6 +48,7 @@
   
   <?php
 	
+	/*
 	if(getUnsolved()==0)
 	{
 		getQuestion($user);	
@@ -56,7 +57,7 @@
 	{
 		getUnsolved($user);	
 	}
-	
+	*/
 	
 ?>
   
