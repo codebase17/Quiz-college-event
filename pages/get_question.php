@@ -2,10 +2,10 @@
 
 	include '../header.php';
 	session_start();
-	$user=$_SESSION['user_name'];
 
 	function getQuestionNumbers()
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$nums=Array();
     		$res = $con->query("select ques_no from quiz");
@@ -16,6 +16,7 @@
 	
 	function getAllotedQuestions($user)
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$nums = Array();
     		$con = getCon();
@@ -29,6 +30,7 @@
 
 	function get_last()
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
     		if($res=="")
@@ -39,6 +41,7 @@
 
 	function give($num)
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
@@ -47,12 +50,14 @@
 
 	function write_to_db($number)
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
 	}
 	
 	function getQuestion()
 	{
+		$user=$_SESSION['user_name'];
 		$con=getCon();
     	$all_q = getQuestionNumbers();
     	$all_given = getAllotedQuestions($user);
