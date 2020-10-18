@@ -77,13 +77,13 @@
        				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
    				</div>';
 				
-				if($ans=="correct")
+				/*if($ans=="correct")
 				{
 					echo '<h3><span class="badge badge-success">Correct</span></h3>';
 					//echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>';
 					echo '<button type="submit" name="next" class="btn btn-dark">NEXT</button>';
 				}
-				else if($ans=="wrong")
+				else*/ if($ans=="wrong")
 				{
 					echo '<h3><span class="badge badge-danger">Wrong</span></h3>';
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
