@@ -79,7 +79,7 @@
 				if($ans=="correct")
 				{
 					echo '<h3><span class="badge badge-secondary">Correct</span></h3>';
-					echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>'
+					echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>';
 				}
 				else if($ans=="wrong")
 				{
