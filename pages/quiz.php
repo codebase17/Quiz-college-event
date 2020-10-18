@@ -1,6 +1,5 @@
 <?php
     include '../header.php';
-    //include 'get_question.php';
 	
     $user=$_SESSION['user_name'];
     $picnum=$_GET['picnum'];    
@@ -50,7 +49,9 @@
   
  <?php
 	
-  	//getQuestion();
+  	header("Location:get_question.php);
+	die();
+	
 	$question=$_SESSION['question'];
 	
 	echo $question;
