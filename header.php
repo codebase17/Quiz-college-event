@@ -4,7 +4,7 @@
         session_start();
 
 
-    global $con=getCon();
+    $con=getCon();
   
   	$res=$con->query("select ques_no from quiz;");
   
