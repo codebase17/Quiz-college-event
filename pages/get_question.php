@@ -60,8 +60,6 @@
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
 		//echo "question is ".$q."<br>";
     		$_SESSION['question']=$q;
-		$gotit="yes";
-		header("Location:quiz.php?picnum=".$num."&&gotit".$gotit);
 	}
 
 	function write_to_db($number)
@@ -75,7 +73,6 @@
 	
 	function getQuestion()
 	{
-		$gotit="no";
 		//echo "in getQuestion function now<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
