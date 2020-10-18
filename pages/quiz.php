@@ -49,12 +49,15 @@
   
  <?php
 	
-  	
+  	$ans=$_GET['ans'];
 	
 	if($user)
 	{
-		getQuestion();	
-		
+		if(($ans!="correct")||($ans!="wrong"))
+		{
+			getQuestion();	
+		}
+			
 		$question=$_SESSION['question'];
 		$ques_no=$_SESSION['ques_no'];
 		
@@ -67,8 +70,24 @@
 			</div>
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<p class="m-4">'.$question.'</p>
-				<input class="form-control" type="text" placeholder="Enter your Answer">
-				<button type="button" class="btn btn-primary m-4">SUBMIT</button>
+				<input class="form-control" type="text" placeholder="Enter your Answer">'
+					
+				if($ans=="correct")
+				{
+					echo '<h3><span class="badge badge-secondary">Correct</span></h3>';
+					echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>'
+				}
+				else if($ans=="wrong")
+				{
+					echo '<h3><span class="badge badge-secondary">Wrong</span></h3>';
+					echo '<a href="check_answer.php"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>'
+				}
+				else{
+					echo '<a href="check_answer.php"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>';
+				}
+				'
+				
+				
 			</div>
 		</div>
 	</div>';
