@@ -79,12 +79,12 @@
 				
 				if($ans=="correct")
 				{
-					echo '<h3><span class="badge badge-secondary">Correct</span></h3>';
+					echo '<h3><span class="badge badge-success">Correct</span></h3>';
 					echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>';
 				}
 				else if($ans=="wrong")
 				{
-					echo '<h3><span class="badge badge-secondary">Wrong</span></h3>';
+					echo '<h3><span class="badge badge-danger">Wrong</span></h3>';
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				else{
