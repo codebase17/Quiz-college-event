@@ -62,7 +62,9 @@
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
 		
-		$echo $_SESSION['question'];
+		$display=$_SESSION['question'];
+		echo "displaying ";
+		var_dump($display);
 	}
 
 	function write_to_db($number)
