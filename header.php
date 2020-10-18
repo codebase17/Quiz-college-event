@@ -1,7 +1,7 @@
 <?php
 
     include 'libraries/essentials.php';
-        session_start();
+    session_start();
 
 
     $con=getCon();
