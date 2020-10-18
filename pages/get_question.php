@@ -87,7 +87,6 @@
     	if($last[0])
     	{
         	give($last[1]);
-        	die();
     	}
     	else
     	{
@@ -105,7 +104,6 @@
         	write_to_db($new_quiz);
 			
 		give($new_quiz);
-        	die();
     	}
 	}
 	//getQuestion();	
