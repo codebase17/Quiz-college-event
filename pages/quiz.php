@@ -50,7 +50,7 @@
   
  <?php
 	
-  	getQuestion();
+  	//getQuestion();
 	$question=$_SESSION['question'];
 	
 	echo $question;
