@@ -41,7 +41,7 @@
 	function give($num)
 	{
 		$con=getCon();
-   	 	$q = $con->query("select question from quiz where number='$num'")->fetch_assoc()['question'];
+   	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
 		header("Location:quiz.php?picnum=".$num);
 	}
