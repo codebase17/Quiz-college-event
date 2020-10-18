@@ -74,8 +74,9 @@
 				<form method="POST" action="check_answer.php">
 				<div class="form-group">
        				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
-   				</div>';
-		
+   				</div>
+				<input type="hidden" name="ques_no" value="<?php echo "$ques_no";?>"> ';
+				
 				if($ans=="correct")
 				{
 					echo '<h3><span class="badge badge-secondary">Correct</span></h3>';
@@ -91,7 +92,6 @@
 				}
 				
 				echo '
-				<input type='hidden' name='ques_no' value='<?php echo "$ques_no";?>'> 
 				</form>
 				
 			</div>
