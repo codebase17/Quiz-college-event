@@ -49,15 +49,15 @@
   
  <?php
 	
-  	header("Location:get_question.php");
-	die();
-	
-	$question=$_SESSION['question'];
-	
-	echo $question;
+  	
 	
 	if($user)
 	{
+		header("Location:get_question.php");
+		die();
+	
+		$question=$_SESSION['question'];
+	
 
   
 	echo '<div class="text-center m-4">
