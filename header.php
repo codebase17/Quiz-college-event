@@ -1,3 +1,18 @@
+<?php
+
+    $con=getCon();
+  
+  	$res=$con->query("select ques_no from quiz;");
+  
+  	$counting=array();
+  	while($ele = $res->fetch_assoc())
+      		$counting[]=$ele['ques_no'];
+     
+   	$c=count($counting);
+    $_SESSION['count']=$c;
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
