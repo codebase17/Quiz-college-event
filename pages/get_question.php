@@ -1,15 +1,10 @@
 <?php
 
+	session_start();
   	$c=$_SESSION['count'];
 	$question=array();
 	$user=$_SESSION['user_name'];
 	$con = getCon();
-	
-    function getRandint()
-   	{
-		$ans= rand(1,$c);
-		 	return $ans;
-    }
 
 	function getQuestionNumbers()
 	{
@@ -47,7 +42,7 @@
 	function give($num)
 	{
    	 	$q = $con->query("select question from quiz where number='$num'")->fetch_assoc()['question'];
-    	$_SESSION['question']=$q;
+    		$_SESSION['question']=$q;
 		header("Location:quiz.php?picnum=".$num);
 	}
 
@@ -88,5 +83,6 @@
     	}
 	}
 			
-    	
+    	getQuestion();
+	
 ?>
