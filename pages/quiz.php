@@ -3,6 +3,64 @@
     session_start();
     include '../header.php';
 
+
+	$c=$_SESSION['count'];
+	$question=array();
+
+    function getRandint()
+   	{
+		$ans= rand(1,$c);
+		 	return $ans;
+    }
+
+
+	function getQuestion()
+	{
+			$r=getRandint();
+			if(rowExists('quiz','ques_no',$r))
+			{
+				getquestion();				
+			}
+			else
+			{
+				$res=$con->query("select * from quiz where ques_no='$r'");
+				while($ele = $res->fetch_assco())
+						$question[]=$ele['question'];
+				
+				$user=$_SESSION['user_name'];
+				$con->query("insert into matches(user_name,ques_no,status) values('$user','$question[0]',0)");
+				
+				return $r;
+			}
+	}
+
+	function getUnsolved()
+	{
+		$res=$con->query("select * from matches order by status asc;");
+		
+		$checkques=array();
+		
+		while($ele = $res->fetch_assoc()){
+			$ques_no[]=$ele['ques_no'];
+			$checkques[]=$ele['status'];
+		}
+		
+		if($checkques[0])
+		{
+			$res=$con->query("select * from quiz where ques_no='$ques_no[0]'");
+				while($ele = $res->fetch_assco())
+						$question[]=$ele['question'];
+			
+			return 1;
+		}
+		else
+		{
+			return 0;	
+		}
+		
+		
+	}
+    	
 ?>
 
 <body>
@@ -42,28 +100,32 @@
     
     include '../flag.php';
     
-   ?>
+  ?>
   
   <!--flag end-->
   
-  
-  
+  <?php
 	
-<?php
-	
-	$con=getCon();
-  
-  	$res=$con->query("select ques_no from quiz;");
-  
-  	$counting=array();
-  	while($ele = $res->fetch_assoc())
-      		$counting[]=$ele['ques_no'];
-     
-   	$c=count($counting);
-	
+	if(getUnsolved()==0)
+	{
+		getQuestion();	
+	}
+	else
+	{
+		getUnsolved();	
+	}
 	
 	
 ?>
+  
+	<div class="text-center">
+		<div class="container m-4">
+			<img src="../assets/testimage.jpg" class="rounded mx-auto d-block" alt="image">
+			<p class="m-4"><?=$question[0]?></p>
+			<input class="form-control" type="text" placeholder="Enter your Answer">
+			<button type="button" class="btn btn-primary m-4">SUBMIT</button>
+		</div>
+	</div>
   
   
   
