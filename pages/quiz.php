@@ -58,7 +58,7 @@
 		$question=$_SESSION['question'];
 		$ques_no=$_SESSION['ques_no'];
 		
-		echo $question."<br>".$ques_no;
+		echo $question."<br>".$ques_no."<br>";
 
   
 	echo '<div class="text-center m-4">
