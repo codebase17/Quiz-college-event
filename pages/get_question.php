@@ -7,6 +7,7 @@
 
 	function getQuestionNumbers()
 	{
+		$con=getCon();
     		$nums=Array();
     		$res = $con->query("select ques_no from quiz");
     		while($num = $res->fetch_assoc())
@@ -16,6 +17,7 @@
 	
 	function getAllotedQuestions($user)
 	{
+		$con=getCon();
     		$nums = Array();
     		$con = getCon();
     		$res = $con->query("select quiz_no as number from matches where user_name='$user'");
@@ -28,6 +30,7 @@
 
 	function get_last()
 	{
+		$con=getCon();
     		$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
     		if($res=="")
         		return [False];
@@ -37,6 +40,7 @@
 
 	function give($num)
 	{
+		$con=getCon();
    	 	$q = $con->query("select question from quiz where number='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
 		header("Location:quiz.php?picnum=".$num);
@@ -44,11 +48,13 @@
 
 	function write_to_db($number)
 	{
+		$con=getCon();
     		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
 	}
 	
 	function getQuestion()
 	{
+		$con=getCon();
     	$all_q = getQuestionNumbers();
     	$all_given = getAllotedQuestions($user);
 		
