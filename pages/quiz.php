@@ -53,7 +53,7 @@
 	
 	if($user)
 	{
-		getQuestion();	
+		//getQuestion();	
 		
 		$question=$_SESSION['question'];
 		$ques_no=$_SESSION['ques_no'];
