@@ -1,5 +1,6 @@
 <?php
 
+    include 'libraries/essentials.php';
 
 ?>
 
