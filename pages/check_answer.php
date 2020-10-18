@@ -22,10 +22,11 @@
       $prev = strtotime($prev);
       $cur = strtotime($cur);
 	 
-      $prev = new DateTime("@$prev");
-      $cur = new DateTime("@$cur");
+      $prev = new DateTime($prev);
+      $cur = new DateTime($cur);
 	  
-      $diff = $cur->getTimestamp() - $prev->getTimestamp();
+      $diff = $cur->diff($prev);
+      $diff=$diff->s;
 	 
       $con->query("update user set points=points+1,rank=rank+'$diff' where user_name='$user'");
       header("Location:quiz.php?ans=correct");
