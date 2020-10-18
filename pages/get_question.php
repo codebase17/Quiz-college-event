@@ -8,7 +8,7 @@
 	function getQuestionNumbers()
 	{
     		$nums=Array();
-    		$res = $con->query("select ques_no from quiz;");
+    		$res = $con->query("select ques_no from quiz");
     		while($num = $res->fetch_assoc())
         		$nums[] = $num['ques_no'];
 		return $nums;
