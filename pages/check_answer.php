@@ -20,9 +20,9 @@
   {
     
       $cur = date("Y-m-d H:i:s");
-      $con->query("update matches set status='1',endtime='$cur' where user_name='$user' and quiz_no='$ques_no'");
+      $con->query("update matches set status='1',end_time='$cur' where user_name='$user' and quiz_no='$ques_no'");
       
-      $prev = $con->query("select starttime from matches where user_name='$user' and quiz_no='$num'")->fetch_assoc()['starttime'];
+      $prev = $con->query("select start_time from matches where user_name='$user' and quiz_no='$num'")->fetch_assoc()['start_time'];
       $prev=strtotime($prev);
       $cur =strtotime($cur);
       $prev = new DateTime("@$prev");
