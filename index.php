@@ -73,7 +73,7 @@
     	@media (min-width:641px)  { .timer{margin-left:1rem;margin-right:1rem;}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 	@media (min-width:961px)  { .timer{margin-left:38rem;margin-right:38rem;} /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 	@media (min-width:1025px) { .timer{margin-left:38rem;margin-right:38rem;} /* big landscape tablets, laptops, and desktops */ }
-	@media (min-width:1281px) { .timer{margin-left:38rem;margin-right:38rem;} /* hi-res laptops and desktops */ }
+	@media (min-width:1281px) { .timer{margin-left:30rem;margin-right:30rem;} /* hi-res laptops and desktops */ }
 	
 </style>
 
