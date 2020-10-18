@@ -55,6 +55,8 @@
   	getQuestion();
 	$question=$_SESSION['question'];
 	
+	echo $question;
+	
 	if($user)
 	{
 	
