@@ -25,8 +25,7 @@
       $prev = new DateTime($prev);
       $cur = new DateTime($cur);
 	  
-      $diff = $cur->diff($prev);
-      $diff=$diff->s;
+      $diff = $cur - $prev;
 	 
       $con->query("update user set points=points+1,rank=rank+'$diff' where user_name='$user'");
       header("Location:quiz.php?ans=correct");
