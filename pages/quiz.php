@@ -70,8 +70,12 @@
 			</div>
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<p class="m-4">'.$question.'</p>
-				<input class="form-control" type="text" placeholder="Enter your Answer">'
-					
+				
+				<form method="POST" action="check_answer.php">
+				<div class="form-group">
+       				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
+   				</div>'
+		
 				if($ans=="correct")
 				{
 					echo '<h3><span class="badge badge-secondary">Correct</span></h3>';
@@ -80,13 +84,17 @@
 				else if($ans=="wrong")
 				{
 					echo '<h3><span class="badge badge-secondary">Wrong</span></h3>';
-					echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>'
+					//echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>'
+					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				else{
-					echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>';
+					//echo '<a href="check_answer.php?ques_no=<?=$ques_no?>"><button type="button" class="btn btn-primary m-4">SUBMIT</button></a>';
+					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
-				'
 				
+				'
+				<input type='hidden' name='ques_no' value='<?php echo "$ques_no";?>'> 
+				</form>
 				
 			</div>
 		</div>
