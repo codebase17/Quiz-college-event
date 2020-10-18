@@ -21,7 +21,6 @@
     		$nums = Array();
     		$con = getCon();
     		$res = $con->query("select quiz_no as number from matches where user_name='$user'");
-    		echo $con->error;
 		
     		foreach($res as $row)
         		$nums[] = $row['number'];
