@@ -49,7 +49,7 @@
   
  <?php
 	
-  	header("Location:get_question.php);
+  	header("Location:get_question.php");
 	die();
 	
 	$question=$_SESSION['question'];
