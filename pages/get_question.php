@@ -1,6 +1,7 @@
 <?php
 
 	include '../header.php';
+`       include '../libraries/essentials.php';
 	session_start();
 
 	function getQuestionNumbers()
