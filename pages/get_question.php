@@ -1,6 +1,7 @@
 <?php
 
 	include '../header.php';
+	include '../libraries/essentials.php';
 	session_start();
   	$c=$_SESSION['count'];
 	$user=$_SESSION['user_name'];
