@@ -6,6 +6,7 @@
 
 <?php 
 	
+	$con=getCon();
   $user=$_SESSION['user_name'];
   $ques_no=$_POST['ques_no'];
   $answer=$_POST['answer'];
