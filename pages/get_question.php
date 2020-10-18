@@ -65,7 +65,7 @@
         	$rem = array_diff($all_q,$all_given);
         	if($rem==[])
         	{
-            	header("Location:last_page.php);
+            	header("Location:last_page.php");
             	die();
         	}
 			
