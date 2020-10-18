@@ -22,14 +22,9 @@
 	  
       $prev=strtotime($prev);
       $cur =strtotime($cur);
-	  
-	  echo "<br>after string to time<br>";
-	  var_dump($prev);
-		echo "  ";
-	  var_dump($cur);
 	 
-      $prev = new DateTime("@$prev");
-      $cur = new DateTime("@$cur");
+      $prev = new DateTime($prev);
+      $cur = new DateTime($cur);
 	  
 	  echo "<br>new Date string to time<br>";
 	  var_dump($prev);
