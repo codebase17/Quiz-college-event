@@ -54,7 +54,8 @@
 	
 	if($user)
 	{
-	
+	  	getQuestion();
+		$question=$_SESSION['question'];
 	
 ?>
   
@@ -64,8 +65,7 @@
 				<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
 			</div>
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
-				<!--<p class="m-4"><?=$question[0]?></p>-->
-				<p class="m-4">This is a question</p>
+				<p class="m-4"><?=$question?></p>
 				<input class="form-control" type="text" placeholder="Enter your Answer">
 				<button type="button" class="btn btn-primary m-4">SUBMIT</button>
 			</div>
