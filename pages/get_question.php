@@ -11,6 +11,8 @@
     		$res = $con->query("select ques_no from quiz");
     		while($num = $res->fetch_assoc())
         		$nums[] = $num['ques_no'];
+		
+		echo "Number of total questions".$nums."<br>";
 		return $nums;
 	}
 	
@@ -24,11 +26,15 @@
 		
     		foreach($res as $row)
         		$nums[] = $row['number'];
+		
+		echo "Number of	given questions".$nums."<br>";
+		
     		return $nums;
 	}
 
 	function get_last()
 	{
+		echo "in getlast function now<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
@@ -40,15 +46,17 @@
 
 	function give($num)
 	{
+		echo "in give function now<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
-		header("Location:quiz.php?picnum=".$num);
+		//header("Location:quiz.php?picnum=".$num);
 	}
 
 	function write_to_db($number)
 	{
+		echo "in write to db function now<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
@@ -56,6 +64,7 @@
 	
 	function getQuestion()
 	{
+		echo "in getQuestion function now<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     	$all_q = getQuestionNumbers();
@@ -83,7 +92,7 @@
 			
         	write_to_db($new_quiz);
 			
-			give($new_quiz);
+		give($new_quiz);
         	die();
     	}
 	}
