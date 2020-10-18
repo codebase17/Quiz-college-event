@@ -8,7 +8,7 @@
 	
 	$con=getCon();
   $user=$_SESSION['user_name'];
-  $ques_no=$_POST['ques_no'];
+  $ques_no=$_SESSION['ques_no'];
   $answer=$_POST['answer'];
 
 	var_dump($ques_no);
