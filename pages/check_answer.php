@@ -22,8 +22,8 @@
       $prev = strtotime($prev);
       $cur = strtotime($cur);
 	 
-      $prev = new DateTime($prev);
-      $cur = new DateTime($cur);
+      //$prev = new DateTime($prev);
+      //$cur = new DateTime($cur);
 	  
       $diff = $cur - $prev;
 	 
