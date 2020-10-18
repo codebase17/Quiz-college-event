@@ -57,13 +57,6 @@
     </div>
     <!--timerend-->
     
-    <?php
-	
-	getQuestion();
-	echo $_SESSION['question'];
-	
-	?>
-    
     <!--start-->
     <div id="start" class="m-5">
         <div class="text-center m-5">
