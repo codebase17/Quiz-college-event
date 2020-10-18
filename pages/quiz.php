@@ -58,11 +58,17 @@
   
 	<div class="text-center m-4">
 		<div class="container">
-			<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
-			<!--<p class="m-4"><?=$question[0]?></p>-->
-			<p class="m-4">This is a question</p>
-			<input class="form-control" type="text" placeholder="Enter your Answer">
-			<button type="button" class="btn btn-primary m-4">SUBMIT</button>
+			<div class="row">
+				<div class="col">
+					<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
+				</div>
+				<div class="col">
+					<!--<p class="m-4"><?=$question[0]?></p>-->
+					<p class="m-4">This is a question</p>
+					<input class="form-control" type="text" placeholder="Enter your Answer">
+					<button type="button" class="btn btn-primary m-4">SUBMIT</button>
+				</div>
+			</div>
 		</div>
 	</div>
   
