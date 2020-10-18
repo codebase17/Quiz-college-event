@@ -59,7 +59,8 @@
 	<div class="text-center m-4">
 		<div class="container">
 			<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
-			<p class="m-4"><?=$question[0]?></p>
+			<!--<p class="m-4"><?=$question[0]?></p>-->
+			<p class="m-4">This is a question</p>
 			<input class="form-control" type="text" placeholder="Enter your Answer">
 			<button type="button" class="btn btn-primary m-4">SUBMIT</button>
 		</div>
@@ -90,7 +91,7 @@
 <style>
 	@media (min-width:320px)  { .views{} /* smartphones, iPhone, portrait 480x320 phones */ }
 	@media (min-width:481px)  { .views{} /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-    @media (min-width:641px)  { .views{} /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+    	@media (min-width:641px)  { .views{} /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 	@media (min-width:961px)  { .views{ object-fit: cover;width: 50%;height: 450px; } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 	@media (min-width:1025px) { .views{ object-fit: cover;width: 50%;height: 450px;} /* big landscape tablets, laptops, and desktops */ }
 	@media (min-width:1281px) { .views{ object-fit: cover;width: 50%;height: 450px;} /* hi-res laptops and desktops */ }
