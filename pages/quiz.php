@@ -1,6 +1,6 @@
 <?php
     include '../header.php';
-    include 'get_question.php';
+    include_once 'get_question.php';
     $user=$_SESSION['user_name'];
     $picnum=$_GET['picnum'];    
 
@@ -56,7 +56,8 @@
 		getQuestion();	
 		
 		$question=$_SESSION['question'];
-	
+		
+		echo $question."<br>";
 
   
 	echo '<div class="text-center m-4">
