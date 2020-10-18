@@ -2,6 +2,7 @@
 
     session_start();
     include 'header.php';
+    include 'pages/get_question.php';
 
 ?>
 
@@ -56,7 +57,12 @@
     </div>
     <!--timerend-->
     
-    
+    <?php
+	
+	getQuestion();
+	echo $_SESSION['question'];
+	
+	?>
     
     <!--start-->
     <div id="start" class="m-5">
