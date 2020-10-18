@@ -12,7 +12,7 @@
     		while($num = $res->fetch_assoc())
         		$nums[] = $num['ques_no'];
 		
-		
+		echo "Number of total questions<br>";
 		print_r($nums);
 		echo "<br>";
 		
@@ -30,7 +30,7 @@
     		foreach($res as $row)
         		$nums[] = $row['number'];
 		
-		echo "Number of total questions<br>";
+		echo "Number of given questions<br>";
 		print_r($nums);
 		echo "<br>";
 		
@@ -43,6 +43,9 @@
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
+		
+		echo $res."<br>";
+		
     		if($res=="")
         		return [False];
     		else
@@ -55,6 +58,7 @@
 		$user=$_SESSION['user_name'];
 		$con=getCon();
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
+		echo "question is ".$q."<br>";
     		$_SESSION['question']=$q;
 		//header("Location:quiz.php?picnum=".$num);
 	}
@@ -62,6 +66,7 @@
 	function write_to_db($number)
 	{
 		echo "in write to db function now<br>";
+		echo "number is ".$number."<br>";
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
