@@ -32,7 +32,7 @@
 		
 		echo "Number of total questions<br>";
 		print_r($nums);
-		echo "<br>;
+		echo "<br>";
 		
     		return $nums;
 	}
