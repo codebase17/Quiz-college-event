@@ -52,10 +52,11 @@
   
  <?php
 	
+  	getQuestion();
+	$question=$_SESSION['question'];
+	
 	if($user)
 	{
-	  	getQuestion();
-		$question=$_SESSION['question'];
 	
 ?>
   
