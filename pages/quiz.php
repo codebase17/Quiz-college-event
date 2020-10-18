@@ -1,6 +1,6 @@
 <?php
     include_once '../header.php';
-    //include_once 'get_question.php';
+    include_once 'get_question.php';
     session_start();
     $user=$_SESSION['user_name'];  
 
@@ -53,7 +53,7 @@
 	
 	if($user)
 	{
-		//getQuestion();	
+		getQuestion();	
 		
 		$question=$_SESSION['question'];
 		$ques_no=$_SESSION['ques_no'];
