@@ -1,6 +1,6 @@
 <?php
     include '../header.php';
-	
+    include 'get_question.php';
     $user=$_SESSION['user_name'];
     $picnum=$_GET['picnum'];    
 
@@ -53,12 +53,7 @@
 	
 	if($user)
 	{
-		$gotit=$_GET['gotit'];
-		if($gotit!="yes")
-		{
-			header("Location:get_question.php");
-			die();
-		}
+		getQuestion();	
 		
 		$question=$_SESSION['question'];
 	
