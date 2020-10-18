@@ -7,35 +7,32 @@
 
 	function getQuestionNumbers()
 	{
-    	$nums=Array();
-    	$res = $con->query("select ques_no from quiz;");
-    	while($num = $res->fetch_assoc())
-        	$nums[] = $num['ques_no'];
-		
-    	return $nums;
-
+    		$nums=Array();
+    		$res = $con->query("select ques_no from quiz;");
+    		while($num = $res->fetch_assoc())
+        		$nums[] = $num['ques_no'];
+		return $nums;
 	}
 	
 	function getAllotedQuestions($user)
 	{
-    	$nums = Array();
-    	$con = getCon();
-    	$res = $con->query("select quiz_no as number from matches where user_name='$user'");
-    	echo $con->error;
+    		$nums = Array();
+    		$con = getCon();
+    		$res = $con->query("select quiz_no as number from matches where user_name='$user'");
+    		echo $con->error;
 		
-    	foreach($res as $row)
-        	$nums[] = $row['number'];
-		
-    	return $nums;
+    		foreach($res as $row)
+        		$nums[] = $row['number'];
+    		return $nums;
 	}
 
 	function get_last()
 	{
-    	$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
-    	if($res=="")
-        	return [False];
-    	else
-        	return [True,$res];
+    		$res=$con->query("select quiz_no as n from matches where user_name='$user' and status='0'")->fetch_assoc()['n'];
+    		if($res=="")
+        		return [False];
+    		else
+        		return [True,$res];
 	}
 
 	function give($num)
@@ -47,7 +44,7 @@
 
 	function write_to_db($number)
 	{
-    	$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
+    		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
 	}
 	
 	function getQuestion()
