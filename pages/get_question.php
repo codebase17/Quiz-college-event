@@ -68,6 +68,8 @@
 	{
 		//echo "in write to db function now<br>";
 		//echo "number is ".$number."<br>";
+		$SESSION['ques_no']=$number;
+		
 		$user=$_SESSION['user_name'];
 		$con=getCon();
     		$con->query("insert into matches(user_name,quiz_no,status) values('$user','$number','0')");
