@@ -1,6 +1,7 @@
 <?php
 
     include 'libraries/essentials.php';
+    session_start();
 
 ?>
 
