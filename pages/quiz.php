@@ -58,10 +58,10 @@
   
 	<div class="text-center m-4">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<img src="../assets/testimage.jpg" class="d-block img-fluid views" alt="image">
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<!--<p class="m-4"><?=$question[0]?></p>-->
 				<p class="m-4">This is a question</p>
 				<input class="form-control" type="text" placeholder="Enter your Answer">
