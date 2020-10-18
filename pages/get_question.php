@@ -12,7 +12,10 @@
     		while($num = $res->fetch_assoc())
         		$nums[] = $num['ques_no'];
 		
-		echo "Number of total questions".$nums."<br>";
+		
+		print_r($nums);
+		echo "<br>";
+		
 		return $nums;
 	}
 	
@@ -27,7 +30,9 @@
     		foreach($res as $row)
         		$nums[] = $row['number'];
 		
-		echo "Number of	given questions".$nums."<br>";
+		echo "Number of total questions<br>";
+		print_r($nums);
+		echo "<br>;
 		
     		return $nums;
 	}
