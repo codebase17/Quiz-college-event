@@ -52,7 +52,9 @@
   
  <?php
 	
-  	getQuestion();
+  	header("Location:get_question.php);
+	die();
+	
 	$question=$_SESSION['question'];
 	
 	echo $question;
