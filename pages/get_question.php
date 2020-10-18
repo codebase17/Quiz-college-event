@@ -2,7 +2,9 @@
 
 `       include '../libraries/essentials.php';
 	session_start();
+?>
 
+<?php 
 	function getQuestionNumbers()
 	{
 		$user=$_SESSION['user_name'];
