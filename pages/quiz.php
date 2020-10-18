@@ -79,7 +79,7 @@
 		echo'
 			<div class="text-center m-4">
 		<div class="container">
-			<p class="m-4">You are not registered :< </p>
+			<p class="m-4">You are not Logged in :< </p>
 		</div>
 	</div>
 		';
