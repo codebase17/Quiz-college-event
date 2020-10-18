@@ -25,8 +25,8 @@
       $prev = $con->query("select start_time from matches where user_name='$user' and quiz_no='$num'")->fetch_assoc()['start_time'];
       $prev=strtotime($prev);
       $cur =strtotime($cur);
-      $prev = new DateTime("@$prev");
-      $cur = new DateTime("@$cur");
+      //$prev = new DateTime("@$prev");
+      //$cur = new DateTime("@$cur");
       $diff = $cur->getTimestamp() - $prev->getTimestamp();
       $con->query("update user set points=points+1,rank=rank+'$diff' where user_name='$user'");
       header("Location:quiz.php?ans=correct");
