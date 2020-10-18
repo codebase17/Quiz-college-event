@@ -74,7 +74,7 @@
 				<form method="POST" action="check_answer.php">
 				<div class="form-group">
        				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
-   				</div>'
+   				</div>';
 		
 				if($ans=="correct")
 				{
@@ -90,7 +90,7 @@
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				
-				'
+				echo '
 				<input type='hidden' name='ques_no' value='<?php echo "$ques_no";?>'> 
 				</form>
 				
