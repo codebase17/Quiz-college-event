@@ -1,6 +1,6 @@
 <?php
 
-	include '../libraries/essentials.php';
+	include '../header.php';
 	session_start();
 ?>
 
