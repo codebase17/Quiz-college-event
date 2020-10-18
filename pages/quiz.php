@@ -15,7 +15,7 @@
     }
 
 
-	function getQuestion()
+	function getQuestion($user)
 	{
 			$r=getRandint();
 			if(rowExists('matches','ques_no',$r))
@@ -112,11 +112,11 @@
 	
 	if(getUnsolved()==0)
 	{
-		getQuestion();	
+		getQuestion($user);	
 	}
 	else
 	{
-		getUnsolved();	
+		getUnsolved($user);	
 	}
 	
 	
