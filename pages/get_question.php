@@ -105,7 +105,5 @@
         	die();
     	}
 	}
-	
-	getQuestion();
 		
 ?>
