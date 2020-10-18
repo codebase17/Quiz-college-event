@@ -4,7 +4,9 @@
     include '../header.php';
     include 'get_question.php';
 	
-	$user=$_SESSION['user_name'];
+    $user=$_SESSION['user_name'];
+    $picnum=$_GET['picnum'];    
+
 ?>
 
 <body>
