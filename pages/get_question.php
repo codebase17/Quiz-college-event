@@ -67,7 +67,7 @@
 	{
 		//echo "in write to db function now<br>";
 		//echo "number is ".$number."<br>";
-		$SESSION['ques_no']=$number;
+		$_SESSION['ques_no']=$number;
 		
 		$user=$_SESSION['user_name'];
 		$con=getCon();
