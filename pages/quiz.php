@@ -53,9 +53,13 @@
 	
 	if($user)
 	{
-		header("Location:get_question.php");
-		die();
-	
+		$gotit=$_GET['gotit'];
+		if($gotit!="yes")
+		{
+			header("Location:get_question.php");
+			die();
+		}
+		
 		$question=$_SESSION['question'];
 	
 
