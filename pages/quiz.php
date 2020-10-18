@@ -1,4 +1,6 @@
 <?php
+
+	date_default_timezone_set('Asia/Kolkata');
     include_once '../header.php';
     include_once 'get_question.php';
     session_start();
