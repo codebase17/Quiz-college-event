@@ -75,7 +75,7 @@
 				<div class="form-group">
        				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
    				</div>';
-				echo '<input type="hidden" name="ques_no" value="<?php echo "$ques_no";?> ';
+				echo '<input type="hidden" name="ques_no" value="<?php echo "$ques_no";?>"> ';
 				
 				if($ans=="correct")
 				{
