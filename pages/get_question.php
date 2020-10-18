@@ -61,13 +61,13 @@
 		$con=getCon();
    	 	$q = $con->query("select question from quiz where ques_no='$num'")->fetch_assoc()['question'];
     		$_SESSION['question']=$q;
+		$_SESSION['ques_no']=$num;
 	}
 
 	function write_to_db($number)
 	{
 		//echo "in write to db function now<br>";
 		//echo "number is ".$number."<br>";
-		$_SESSION['ques_no']=$number;
 		
 		$user=$_SESSION['user_name'];
 		$con=getCon();
