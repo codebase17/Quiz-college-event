@@ -72,7 +72,7 @@
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<p class="m-4">'.$question.'</p>
 				
-				<form method="POST" action="check_answer.php">
+				<form method="POST" action="check_answer.php" onsubmit="disableButton()">
 				<div class="form-group">
        				<input type="text" class="form-control" id="inputanswer" placeholder="Enter answer" name="answer" required>
    				</div>';
@@ -89,7 +89,7 @@
 					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
 				}
 				else{
-					echo '<button type="submit" name="checkanswer" onClick="this.disabled=true; this.value="Sending…";" class="btn btn-dark">SUBMIT</button>';
+					echo '<button type="submit" name="checkanswer" id="itscorrect" class="btn btn-dark">SUBMIT</button>';
 				}
 				
 				echo '
@@ -115,7 +115,13 @@
 	
 	
 </body>
-
+<script>
+    function disableButton() {
+        var btn = document.getElementById('itscorrect');
+        btn.disabled = true;
+        btn.innerText = 'checking...'
+    }
+</script>
 <style>
 	@media (min-width:320px)  { .views{} /* smartphones, iPhone, portrait 480x320 phones */ }
 	@media (min-width:481px)  { .views{} /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
