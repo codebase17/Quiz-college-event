@@ -88,14 +88,8 @@
                     <th>Points</th>
                 </tr>
            </thead>
-           <tr>
-               <td>0</td>
-               <td>root</td>
-               <td>99</td>
-           </tr>
-	       
 	   <?php for($j=1;$j<=$c;$j++) { ?>    
-	   		<tr>
+	   	<tr>
                	<td><?=$j?></td>
                	<td><?=$users[$j-0]?></td>
                	<td><?=$points[$j-0]?></td>
