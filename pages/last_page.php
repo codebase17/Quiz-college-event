@@ -46,8 +46,8 @@
   
   
   <div class="text-center">
-    <div class="container">
-      <h2>ಧನ್ಯವಾದಗಳು</h2>
+    <div class="m-5 p-4">
+      <h1>ಧನ್ಯವಾದಗಳು</h1>
     </div>
   </div>
   
