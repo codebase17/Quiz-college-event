@@ -47,7 +47,28 @@
   <!--flag end-->
   
   
-  
+<?php
+	
+	$con=getCon();
+	$res=$con->query("select * from user order by user_id");
+	
+	$users=Array();
+	$points=Array();
+	$rank=Array();
+	
+	while($ele=$res->fetch_assoc())
+	{
+		$users[]=$ele['user_name'];
+		$points[]=$ele['points'];
+		$rank[]=$ele['rank'];
+	}	
+	
+	$c=count($users);
+	array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_ASC,SORT_NUMERIC,$users);
+	$i=1;
+?>
+	
+	
   <!--leaderboard-->
   
   <div class='jumbotron text-center'>
@@ -63,13 +84,19 @@
                     <th>Points</th>
                 </tr>
            </thead>
-      <?  ?>
            <tr>
-               <td>1</td>
+               <td>0</td>
                <td>root</td>
                <td>99</td>
            </tr>
-      <?  ?>
+	       
+	   <?php for($j=1;$j<=$c;$j++) { ?>    
+	   		<tr>
+               	<td><?=$j?></td>
+               	<td><?=$users[$j]?></td>
+               	<td><?=$points[$j]?></td>
+           	</tr>
+	   <? } ?>
        </table>
    </div>
 
