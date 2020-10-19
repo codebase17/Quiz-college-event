@@ -86,7 +86,7 @@
 				else*/ if($ans=="wrong")
 				{
 					echo '<h3><span class="badge badge-danger">Wrong</span></h3>';
-					echo '<button type="submit" name="checkanswer" class="btn btn-dark">SUBMIT</button>';
+					echo '<button type="submit" name="checkanswer" id="itscorrect" class="btn btn-dark">SUBMIT</button>';
 				}
 				else{
 					echo '<button type="submit" name="checkanswer" id="itscorrect" class="btn btn-dark">SUBMIT</button>';
