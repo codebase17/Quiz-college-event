@@ -75,7 +75,7 @@
   <!--leaderboard-->
   
   <div class='jumbotron text-center'>
-        <h1 class="">Hall Of Fame</h1>
+        <h1 class="display-4">ಹಾಲ್ ಆಫ್ ಫೇಮ್</h1>
     </div>
 
    <div class='container mt-3'>
