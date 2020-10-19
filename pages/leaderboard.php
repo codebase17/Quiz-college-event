@@ -63,6 +63,10 @@
 		$rank[]=$ele['rank'];
 	}	
 	
+	print_r($users);echo "<br>";
+	print_r($points);echo "<br>";
+	print_r($rank);echo "<br>";
+	
 	$c=count($users);
 	array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_ASC,SORT_NUMERIC,$users);
 	$i=1;
