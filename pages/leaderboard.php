@@ -93,8 +93,8 @@
 	   <?php for($j=1;$j<=$c;$j++) { ?>    
 	   		<tr>
                	<td><?=$j?></td>
-               	<td><?=$users[$j]?></td>
-               	<td><?=$points[$j]?></td>
+               	<td><?=$users[$j-0]?></td>
+               	<td><?=$points[$j-0]?></td>
            	</tr>
 	   <? } ?>
        </table>
