@@ -69,7 +69,6 @@
 	
 	$c=count($users);
 	array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_ASC,SORT_NUMERIC,$users);
-	$i=1;
 ?>
 	
 	
@@ -88,11 +87,11 @@
                     <th>Points</th>
                 </tr>
            </thead>
-	   <?php for($j=1;$j<=$c;$j++) { ?>    
+	   <?php for($j=0;$j<$c;$j++) { ?>    
 	   	<tr>
-               	<td><?=$j?></td>
-               	<td><?=$users[$j-0]?></td>
-               	<td><?=$points[$j-0]?></td>
+               	<td><?=$j+1?></td>
+               	<td><?=$users[$j]?></td>
+               	<td><?=$points[$j]?></td>
            	</tr>
 	   <? } ?>
        </table>
