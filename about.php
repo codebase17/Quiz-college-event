@@ -47,7 +47,7 @@
   <!--flag end-->
   
   <div class="jumbotron text-center" >
-   <p class="display-2">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ</p>
+   <p class="display-4">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ</p>
   </div>
   
 </body>
