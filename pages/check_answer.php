@@ -9,9 +9,12 @@
   $user=$_SESSION['user_name'];
   $ques_no=$_SESSION['ques_no'];
   $answer=$_POST['answer'];
+  $answer1=trim(strtolower($_POST['answer']));
 
   $correct=$con->query("select answer from quiz where ques_no='$ques_no'")->fetch_assoc()['answer'];
-  if($answer==$correct)
+  $correct1=trim(strtolower($correct));
+
+  if(($answer==$correct)||($answer1==$correct1))
   {
     
       $cur = date("Y-m-d H:i:s");
