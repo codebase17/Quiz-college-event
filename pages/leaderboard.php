@@ -87,13 +87,13 @@
                     <th>Points</th>
                 </tr>
            </thead>
-	   <?php for($j=0;$j<$c;$j++) { ?>    
+	   <?php for($j=0;$j<$c;$j++) { if($users[$j]!="groot") { ?>    
 	   	<tr>
                	<td><?=$j+1?></td>
                	<td><?=$users[$j]?></td>
                	<td><?=$points[$j]?></td>
            	</tr>
-	   <? } ?>
+	   <? } } ?>
        </table>
    </div>
 
