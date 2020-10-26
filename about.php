@@ -51,7 +51,7 @@
 	<p>ಯುವಿಸಿಇ ವೈಭವ ಪ್ರಯುಕ್ತ, IEEE UVCE ಕಡೆಯಿಂದ ನಿಧಿ ಶೋಧನೆ! ಕರುನಾಡ ಉದ್ದಗಲ ಪಯಣಿಸಿ, ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಿ, ಮುಂದಿನ ನಿಲ್ದಾಣ ತಲುಪಿ!</p>
 	  
 	  <p class="display-4 mb-2 mt-4">Alemaari </p>
-	<p>The treasure hunt of UVCE vaibhava presented to you by IEEE UVCE and Chetana. 
+	<p>The treasure hunt of UVCE Vaibhava presented to you by IEEE UVCE and Chetana. 
 	Answer the questions related to our state and find your way to top of the leaderboard.</p>
   </div>
   
