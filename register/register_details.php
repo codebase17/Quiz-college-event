@@ -29,7 +29,7 @@
   }
     else
     {
-      if(($con->query("insert into user(user_name,email,password,name,college_name,course,number) values('$u','$e','$p','$name','$collegename','$course','$contact');"))===True)
+      if(($con->query("insert into user(user_name,email,password,name,college_name,course,contact) values('$u','$e','$p','$name','$collegename','$course','$contact');"))===True)
       {
           header("Location:../login/login.php");
           die();
