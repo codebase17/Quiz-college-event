@@ -66,7 +66,23 @@
 
 
 <form class="jumbotron m-4" method="POST" action="register_details.php">
-     <div class="form-group">
+    <div class="form-group">
+        <label for="inputname">Name</label>
+        <input type="text" class="form-control" id="inputname" placeholder="name" name="name" required>
+    </div> 
+    <div class="form-group">
+        <label for="inputcollegename">College name</label>
+        <input type="text" class="form-control" id="inputcollegename" placeholder="collegename" name="collegename" required>
+    </div> 
+    <div class="form-group">
+        <label for="inputcourse">Course</label>
+        <input type="text" class="form-control" id="inputcourse" placeholder="course" name="course" required>
+    </div> 
+    <div class="form-group">
+        <label for="inputcollegename">Contact</label>
+        <input type="number" class="form-control" id="inputcontact" placeholder="contact" name="contact" required>
+    </div> 
+    <div class="form-group">
         <label for="inputusername">Username</label>
         <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="user_name" required>
     </div>
