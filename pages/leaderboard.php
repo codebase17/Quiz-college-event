@@ -93,7 +93,11 @@
                	<td><?=$users[$j]?></td>
                	<td><?=$points[$j]?></td>
            	</tr>
-	   <? } } ?>
+	   <? }
+		else
+		{
+			$j=$j-1;	      
+		} } ?>
        </table>
    </div>
 
