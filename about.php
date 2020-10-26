@@ -8,7 +8,7 @@
 <body>
     
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="index.php" class="navbar-brand">Ka-nna-da</a>
+    <a href="index.php" class="navbar-brand">ಅಲೆಮಾರಿ</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
