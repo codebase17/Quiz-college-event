@@ -4,6 +4,11 @@
   if(isset($_POST['register_user'])){
   $con=getCon();
 
+  $name=$_POST['name'];
+  $collegename=$_POST['collegename'];
+  $course=$_POST['course'];
+  $contact=$_POST['contact'];
+
   $u = $_POST['user_name'];
   $e = $_POST['email'];
   $p = $_POST['password'];
@@ -24,7 +29,7 @@
   }
     else
     {
-      if(($con->query("insert into user(user_name,email,password) values('$u','$e','$p');"))===True)
+      if(($con->query("insert into user(user_name,email,password,name,college_name,course,number) values('$u','$e','$p','$name','$collegename','$course','$contact');"))===True)
       {
           header("Location:../login/login.php");
           die();
