@@ -8,7 +8,7 @@
 <body>
     
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="../index.php" class="navbar-brand">ಅಲೆಮಾರಿ</a>
+    <a href="../index.php" class="navbar-brand">Quiz Application</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,8 +19,6 @@
             <a href="../about.php" class="nav-item nav-link">About</a>
         </div>
         <div class="navbar-nav ml-auto">
-            <!--<a href="register/register.php" class="nav-item nav-link">Register</a>
-            <a href="login/login.php" class="nav-item nav-link">Login</a>&nbsp;&nbsp;-->
             <?php if(isset($_SESSION['user_name'])) {
                         echo '<a href="../profile.php" class="nav-item nav-link active"><i class="fa fa-user-o">  '.$_SESSION['user_name'].'</i></a>';
 	 		                  echo '<a href="../login/logout.php" class="nav-item nav-link">Logout</a>';
@@ -33,24 +31,12 @@
       </div>
     </div>
 </nav>
-  
-  
-  
-  <!--flag-->
- 
-  <?php
-    
-    include '../flag.php';
-    
-   ?>
-  
-  <!--flag end-->
-  
+
   
 <?php
 	
 	$con=getCon();
-	$res=$con->query("select * from user order by user_id");
+	$res=$con->query("select * from user");
 	
 	$users=Array();
 	$points=Array();
@@ -63,11 +49,8 @@
 		$rank[]=$ele['rank'];
 	}	
 	
-	//print_r($users);echo "<br>";
-	//print_r($points);echo "<br>";
-	//print_r($rank);echo "<br>";
-	
 	$c=count($users);
+	
 	array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_ASC,SORT_NUMERIC,$users);
 ?>
 	
@@ -75,7 +58,7 @@
   <!--leaderboard-->
   
   <div class='jumbotron text-center'>
-        <h1 class="display-4">ಹಾಲ್ ಆಫ್ ಫೇಮ್</h1>
+        <h1 class="display-4">LEADERBOARD</h1>
     </div>
 
    <div class='container mt-3'>
@@ -97,7 +80,8 @@
 		else
 		{
 			$j=$j-1;	      
-		} } ?>
+		} 
+	} ?>
        </table>
    </div>
 
