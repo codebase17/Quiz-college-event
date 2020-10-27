@@ -4,8 +4,8 @@
     include '../header.php';
 
 
-	if($_SESSION['user_name']!="groot"){
-		echo "<h1>FUCK OFF BITCH<h/1>";
+	if($_SESSION['user_name']!="admin"){
+		echo "<h1>Apologies you are not admin<h/1>";
 		
 	}
 	else{
