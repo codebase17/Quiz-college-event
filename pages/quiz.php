@@ -56,7 +56,7 @@
 	{
 		if(($ans!="correct")||($ans!="wrong"))
 		{
-			//getQuestion();	
+			getQuestion();	
 		}
 			
 		$question=$_SESSION['question'];
@@ -64,7 +64,7 @@
 		
 
   
-	/*echo '<div class="text-center m-4">
+	echo '<div class="text-center m-4">
 		<div class="row">
 			<div class="col-lg-6 col-xs-2 col-sm-2 col-md-2">
 				<img src="../assets/'.$ques_no.'.jpg" class="d-block img-fluid views" alt="">
@@ -83,7 +83,7 @@
 					//echo '<a href="quiz.php?ans=next"><button type="button" class="btn btn-primary m-4">NEXT</button></a>';
 					echo '<button type="submit" name="next" class="btn btn-dark">NEXT</button>';
 				}
-				else*//* if($ans=="wrong")
+				else*/ if($ans=="wrong")
 				{
 					echo '<h3><span class="badge badge-danger p-3">Wrong</span></h3>';
 					echo '<button type="submit" name="checkanswer" id="itscorrect" class="btn btn-dark">SUBMIT</button>';
@@ -97,7 +97,7 @@
 				
 			</div>
 		</div>
-	</div>';*/
+	</div>';
   	 }
 	
 	else
