@@ -24,10 +24,7 @@
 	  
       $prev = strtotime($prev);
       $cur = strtotime($cur);
-	 
-      //$prev = new DateTime($prev);
-      //$cur = new DateTime($cur);
-	  
+	
       $diff = $cur - $prev;
 	 
       $con->query("update user set points=points+1,rank=rank+'$diff' where user_name='$user'");
