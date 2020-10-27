@@ -31,6 +31,12 @@
       </div>
     </div>
 	</nav>
+	
+	
+	
+	<div class="jumbotron">
+		<h1 class="text-center">Quiz Application</h1>
+	</div>
   
 </body>
 </html>
