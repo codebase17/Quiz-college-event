@@ -55,7 +55,7 @@
 			    
 			 $user=$_SESSION['user_name'];
 			 $res=$con->query("select points from user where user_name = '$user'");
-			  print_r($res);
+			
 			 while($ele = $res->fetch_assoc())
 			 {
 				$points[]=$ele['points'];
