@@ -3,7 +3,7 @@
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="../index.php" class="navbar-brand">ಅಲೆಮಾರಿ</a>
+    <a href="../index.php" class="navbar-brand">Quiz Application</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,16 +26,6 @@
     </div>
 </nav>
   
-
-<!--flag-->
-  
-  <?php
-  include '../flag.php';
-?>
-  
-  <!--flag end-->
-
-
  <?php
         $userexists=$_GET['userexists'];
         $emailexists=$_GET['emailexists'];
