@@ -66,21 +66,33 @@
 				<p class="m-4">'.$question.'</p>
 				
 				<form method="POST" action="check_answer.php" onsubmit="disableButton()">
-				<div class="form-check">
-  					<input class="form-check-input" type="radio" name="option" id="exampleRadios1" value="'.$option1.'">
-  					<label class="form-check-label" for="exampleRadios1">'.$option1.'</label>
-				</div>
-				<div class="form-check">
+				<div class="row">
+					<div class="col">
+					<div class="form-check">
+  						<input class="form-check-input" type="radio" name="option" id="exampleRadios1" value="'.$option1.'">
+  						<label class="form-check-label" for="exampleRadios1">'.$option1.'</label>
+					</div>
+					</div>
+					<div class="col">
+					<div class="form-check">
   					<input class="form-check-input" type="radio" name="option" id="exampleRadios2" value="'.$option2.'">
   					<label class="form-check-label" for="exampleRadios2">'.$option2.'</label>
+					</div>
+					</div>
 				</div>
-				<div class="form-check">
-  					<input class="form-check-input" type="radio" name="option" id="exampleRadios3" value="'.$option3.'">
-  					<label class="form-check-label" for="exampleRadios3">'.$option3.'</label>
-				</div>
-				<div class="form-check">
-  					<input class="form-check-input" type="radio" name="option" id="exampleRadios4" value="'.$option4.'">
-  					<label class="form-check-label" for="exampleRadios4">'.$option4.'</label>
+				<div class="row">
+					<div class="col">
+					<div class="form-check">
+  						<input class="form-check-input" type="radio" name="option" id="exampleRadios3" value="'.$option3.'">
+  						<label class="form-check-label" for="exampleRadios3">'.$option3.'</label>
+					</div>
+					</div>
+					<div class="col">
+					<div class="form-check">
+  						<input class="form-check-input" type="radio" name="option" id="exampleRadios4" value="'.$option4.'">
+  						<label class="form-check-label" for="exampleRadios4">'.$option4.'</label>
+					</div>
+					</div>
 				</div>';
 				 
 				echo '<button type="submit" name="checkanswer" id="itscorrect" class="btn btn-dark">SUBMIT</button>';
