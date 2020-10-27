@@ -9,7 +9,7 @@
     $answer=$_POST['answer'];
     
     
-   if ($_SESSION['user_name']=="groot") {
+   if ($_SESSION['user_name']=="admin") {
     if (isset($_POST['add_question'])) {
     
       if(($con->query("insert into quiz(ques_no,question,answer) values('".mysqli_real_escape_string($con,$ques_no)."','".mysqli_real_escape_string($con,$question)."','".mysqli_real_escape_string($con,$answer)."')"))===True){
@@ -24,7 +24,7 @@
     }
     else
     {
-        echo "<h1>FUCK OFF BITCH!!</h1>";
+        echo "<h1>Apologies you are not admin</h1>";
     }
     
 
