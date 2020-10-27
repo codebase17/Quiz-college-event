@@ -3,7 +3,7 @@
   include '../header.php';
   
 if($_SESSION['user_name']!="groot"){
-	echo "<h1>Fuck Off Bitch</h1>";	
+	echo "<h1>Apologies you are not admin</h1>";	
 }
 else{
 ?>
