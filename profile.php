@@ -53,7 +53,8 @@
 			 
 			 $points=Array();
 			    
-			 $res=$con->query("select points from user where user_name = '$_SESSION['user_name']'");
+			 $user=$_SESSION['user_name'];
+			 $res=$con->query("select points from user where user_name = '$user'");
 			    
 			 while($ele = $res->fetch_assoc())
 			 {
