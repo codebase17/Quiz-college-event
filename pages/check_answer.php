@@ -34,6 +34,7 @@
       
   }
 
+	$con->query("update matches set status='1',end_time='$cur' where user_name='$user' and quiz_no='$ques_no'");
       header("Location:quiz.php");
       die(); 
 
