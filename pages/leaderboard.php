@@ -70,7 +70,7 @@
                     <th>Points</th>
                 </tr>
            </thead>
-	   <?php for($j=0;$j<$c;$j++) { if($users[$j]!="groot") { ?>    
+	   <?php for($j=0;$j<$c;$j++) { if($users[$j]!="admin") { ?>    
 	   	<tr>
                	<td><?=$j+1?></td>
                	<td><?=$users[$j]?></td>
